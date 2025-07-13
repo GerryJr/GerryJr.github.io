@@ -1,0 +1,8 @@
+#navbar .silent {
+  color: #b6b6b6;
+}
+
+/* when NavLink is active we add the “active” class */
+#navbar .silent.active {
+  color: black;
+}

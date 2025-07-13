@@ -1,0 +1,24 @@
+.experience-location {
+    text-align: left;
+    color: dimgrey;
+    padding-top: 0;
+    margin: 0;
+    text-indent: 10px;
+    padding-bottom: 5px;
+}
+
+.exp-title {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: column; /* Stack items vertically within the container */
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.time-stan {
+    color: dimgrey;
+}

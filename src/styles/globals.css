@@ -1,0 +1,303 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Make the main content area flexible to fill the remaining space */
+}
+
+.icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.4s ease;
+}
+
+#line1 {
+    top: 0;
+}
+
+#line2 {
+    top: 13px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#line3 {
+    bottom: 1px;
+}
+
+#navbar {
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+#navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: black;
+    transition: color .6s ease;
+}
+
+#navbar a:not(:hover) {
+    transition: color .6s ease;
+}
+
+#navbar .icon {
+    display: none;
+    color: black;
+}
+
+#navbar #brand {
+    float: none;
+    text-align: center;
+    padding-top: 30px;
+    display: block;
+    margin: 0;
+}
+
+#brand {
+    color: black;
+    font-size: 30px;
+}
+
+#divide-top {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+}
+
+#navbar #brand:hover {
+    background-color: white;
+}
+
+#content-border {
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#content-holder {
+    /* border: 2px solid #333; */
+    max-width: 810px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+}
+
+.left-cont {
+    flex: 1; /* Fill the remaining space */
+    box-sizing: border-box;
+    font-size: 16px;
+    /* border: 2px solid #333; */
+}
+
+.left-cont p {
+    margin: 0;
+}
+
+.silent {
+    color: #b6b6b6;
+}
+
+.right-cont {
+    width: 580px; /* Set a fixed width for the right column */
+    box-sizing: border-box;
+    /* border: 2px solid #333; */
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 10px;
+    text-indent: 30px;
+}
+
+.small-light-grey-line {
+    margin: 10px;
+    border: 1px solid #dcdbdb;
+}
+
+img {
+    max-width: 80%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Allow the height to adjust proportionally */
+    display: block; /* Remove any default spacing below the image */
+    margin: 0 auto; /* Center the image within its container */
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.title {
+    text-align: center;
+}
+
+.linked-title {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-object {
+    text-align: center;
+    margin: 20px;
+    text-indent: 0;
+}
+
+.project-object p {
+    margin: 5px;
+    /* border: 2px solid #333; */
+}
+
+
+.exp-project {
+    text-align: left;
+}
+
+footer {
+    padding: 40px; /* Add padding to the footer content */
+    text-align: center; /* Center-align the content within the footer */
+}
+
+.exp-title h2,
+.exp-title p {
+    margin: 0;
+    padding: 0;
+}
+
+.experience {
+    margin-bottom: 50px;
+}
+
+.exp-listing p {
+    margin: 3px;
+    text-indent: 0;
+    padding-left: 30px;
+}
+
+.edu-title {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: column; /* Stack items vertically within the container */
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 0;
+    margin-bottom: 5px;
+}
+
+.edu-title h3,
+.edu-title p {
+    margin: 0;
+    padding: 0;
+}
+
+.edu-listing p {
+    margin: 0;
+    padding: 0;
+    text-indent: 10px;
+}
+
+.pub-listing {
+    text-indent: -20px;
+    padding-left: 25px;
+    /* border: 2px solid #333; */
+}
+
+#exp-label,
+#pub-label {
+    margin-top: 50px;
+}
+
+.prog-langs {
+    text-indent: 40px;
+    text-align: center;
+}
+
+.prog-langs i {
+    font-size: 42px;
+}
+
+.prog-langs i:hover {
+    color: #1c7430;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    #navbar a:not(:first-child) {
+        display: none;
+    }
+
+    #navbar #navbar-options {
+        display: none;
+    }
+
+    #navbar #brand {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #navbar a.icon {
+        float: right;
+        display: block;
+        margin-top: 30px;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    #navbar.responsive #navbar-options:not(.icon),
+    #navbar.responsive a:not(.icon) {
+        display: block;
+        text-align: center;
+        background: white;
+    }
+
+     #navbar.responsive #navbar-options:not(.icon) {
+         width: 100%;
+     }
+
+    .left-cont,
+    .right-cont {
+        width: 100%; /* Take up full width of the container */
+        box-sizing: border-box;
+        /* border: 2px solid #333; */
+        margin-bottom: 10px; /* Add some space between the columns */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #content-holder {
+        flex-direction: column; /* Stack the columns vertically */
+    }
+
+    .right-cont {
+        width: 100%; /* Set the right column to take up full width */
+    }
+
+    img {
+        max-width: 70%;
+    }
+
+    #selfie {
+        width: 300px;
+    }
+}
+
