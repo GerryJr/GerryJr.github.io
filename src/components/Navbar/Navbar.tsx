@@ -1,7 +1,7 @@
 // Navbar.tsx
 import { useLocation } from 'react-router-dom';
 
-import resumePath from "src/assets/Gerardo_Lopez_CV.pdf";
+import resumePath from "../../assets/Gerardo_Lopez_CV.pdf";
 
 export default function Navbar() {
   const { pathname } = useLocation();
