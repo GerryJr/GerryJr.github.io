@@ -25,7 +25,8 @@ export default function Home() {
             models, and create internal tools to speed up analysis. By using
             <strong>AWS resources</strong>, I'm able to create scalable
             software solutions to solve unique issues proposed by our research team. Additionally, I was
-            able to integrate our custom website into Canvas using <strong>LTI 1.3 using Docker.</strong>
+            able to integrate our custom website into Canvas using <strong>LTI 1.3</strong>  tested in
+            <strong>Docker.</strong>
           </p>
 
           <p>Before transitioning into software engineering, I conducted <strong>research</strong> on AI in education,
@@ -33,7 +34,8 @@ export default function Home() {
             As part of CP-LEADS, a fellowship that prepares students for Ph.D. programs,
             I developed experience in <strong>data analytics using R</strong>. My work involved analyzing
             user engagement patterns, applying <strong>Natural Language Processing (NLP) techniques</strong>,
-            and creating visual models to interpret data trends in educational research.</p>
+            and creating visual models to interpret data trends in educational research.
+          </p>
 
           <p>In my spare time, I enjoy playing video games whenever possible. I used to stream
             my games on twitch, but now I find myself simply enjoying 1 or 2 games whenever I
