@@ -1,5 +1,6 @@
+import profilePicture from "../../assets/profile_pic.png";
+
 export default function Profile() {
-  const profilePicture = "../../assets/profile_pic.png"
   return (
     <>
       <img id="selfie" src={profilePicture} alt="Gerardo Selfie"/>

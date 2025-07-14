@@ -1,6 +1,8 @@
 // Navbar.tsx
 import { useLocation } from 'react-router-dom';
 
+import resumePath from "src/assets/Gerardo_Lopez_CV.pdf";
+
 export default function Navbar() {
   const { pathname } = useLocation();
 
@@ -56,7 +58,7 @@ export default function Navbar() {
           <a href="#/projects" className="silent" style={projectsStyle}>PROJECTS</a>
           <a href="#/experience" className="silent" style={experienceStyle}>EXPERIENCE</a>
           <a href="#/tech_skills" className="silent" style={techStyle}>TECHNICAL SKILLS</a>
-          <a href="src/assets/Gerardo_Lopez_CV.pdf" target="_blank" rel="noopener noreferrer" className="silent">CV</a>
+          <a href={resumePath} target="_blank" rel="noopener noreferrer" className="silent">CV</a>
         </div>
       </div>
       <hr id="divide-top" className="small-light-grey-line"/>
