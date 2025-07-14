@@ -8,14 +8,14 @@ export default function Home() {
           <Profile/>
         </div>
         <div className="right-cont">
-          <p>I am a Bachelor's student in Mathematics at the University of California,
-            Irvine, with a strong interest in software engineering. Currently,
-            I work as a <strong>Software Engineer</strong> at the Digital Learning Lab in UCI,
-            under Dr. Mark Warschauer and with Ph.D candidate Daniel Ritchie.
-            Previously, I was a <strong>research assistant</strong> on the <strong>CodeAI project</strong>,
-            focusing on creating software to enhance AI literacy among students. Early in my
-            research, I found myself drawn more and more to the technical side of things,
-            which eventually led to a paid role in software development.
+          <p>Hello there fine reader! I am a <strong>Software Engineer</strong> currently working at the
+            Digital Learning Lab in UCI with <strong>~3 years</strong> of professional coding experience.
+            I studied in UCI for a <strong>Bachelors in Mathematics</strong> with a strong emphasis in AI
+            in Education. I did research under Dr. Mark Warschauer and with Ph.D candidate Daniel Ritchie where we
+            developed AI tools for students in UCI. Previously, I was a <strong>Data Analyst</strong> in the
+            <strong>CP-LEADS</strong>, focusing on analyzing student engagements with our AI tools.
+            Early in my research, I found myself drawn more and more to the technical side of things,
+            which eventually led to my paid role in software development.
           </p>
 
           <p>My current focus is building <strong>automated data pipelines</strong>,
@@ -24,7 +24,9 @@ export default function Home() {
             that handle <strong>massive datasets</strong>, run performance tests on AI
             models, and create internal tools to speed up analysis. By using
             <strong>AWS resources</strong>, I'm able to create scalable
-            software solutions to solve unique issues proposed by our research team.</p>
+            software solutions to solve unique issues proposed by our research team. Additionally, I was
+            able to integrate our custom website into Canvas using <strong>LTI 1.3 using Docker.</strong>
+          </p>
 
           <p>Before transitioning into software engineering, I conducted <strong>research</strong> on AI in education,
             <strong>co-authoring</strong> studies that explored student engagement with AI-driven learning tools.
