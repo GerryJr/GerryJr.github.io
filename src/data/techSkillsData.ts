@@ -22,9 +22,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Python",     iconClass: "devicon-python-plain" },
       { name: "TypeScript", iconClass: "devicon-typescript-plain" },
-      { name: "JavaScript", iconClass: "devicon-javascript-plain" },
+      // { name: "JavaScript", iconClass: "devicon-javascript-plain" },
       { name: "R",          iconClass: "devicon-r-plain" },
-      { name: "SQL",        iconClass: "devicon-sql-plain" },
+      // { name: "SQL",        iconClass: "devicon-sql-plain" },
       { name: "HTML5",      iconClass: "devicon-html5-plain" },
       { name: "CSS3",       iconClass: "devicon-css3-plain" },
       { name: "MATLAB",     iconClass: "devicon-matlab-plain" },
@@ -49,7 +49,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "AWS",         iconClass: "devicon-amazonwebservices-plain" },
       { name: "Google Cloud",iconClass: "devicon-googlecloud-plain" },
       { name: "MongoDB",     iconClass: "devicon-mongodb-plain" },
-      { name: "DynamoDB",    iconClass: "devicon-dynamodb-plain" },
+      // { name: "DynamoDB",    iconClass: "devicon-dynamodb-plain" },
     ],
   },
   {
@@ -61,7 +61,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Git",         iconClass: "devicon-git-plain" },
       { name: "GitHub",      iconClass: "devicon-github-plain" },
       { name: "Docker",      iconClass: "devicon-docker-plain" },
-      { name: "Postman",     iconClass: "devicon-postman-plain" },
+      // { name: "Postman",     iconClass: "devicon-postman-plain" },
     ],
   },
   {
@@ -75,7 +75,7 @@ export const skillCategories: SkillCategory[] = [
 export const qualifications: Qualification[] = [
   {
     title: "AWS Cloud Practitioner",
-    expiry: "Expected Jun. 2025",
+    expiry: "Expected July 2025",
     details: [
       "Foundational AWS Concepts",
       "Best Practices, Core Services",
@@ -84,7 +84,7 @@ export const qualifications: Qualification[] = [
   },
   {
     title: "Git Certification",
-    expiry: "Received Apr. 2025",
+    expiry: "April 2025",
     details: [
       "Version Control Practices",
       "Collaborative Development using Git."
@@ -92,7 +92,7 @@ export const qualifications: Qualification[] = [
   },
   {
     title: "CITI Program Certificate",
-    expiry: "Valid Until July 2028",
+    expiry: "March 2024",
     details: [
       "Human Subject Research",
       "Social/Behavioral Investigators",

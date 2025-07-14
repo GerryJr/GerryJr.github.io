@@ -1,6 +1,6 @@
-// src/components/TechSkills/TechSkills.tsx
 import Profile from "../../components/Profile/Profile";
 import { skillCategories, qualifications } from "../../data/techSkillsData";
+import "./TechSkills.css";
 
 export default function TechSkills() {
   return (
@@ -8,7 +8,7 @@ export default function TechSkills() {
       <div id="content-border">
         <div id="content-holder">
           <div className="left-cont">
-            <Profile/>
+            <Profile />
           </div>
 
           <div className="right-cont">
@@ -19,14 +19,14 @@ export default function TechSkills() {
                 <div className="exp-title">
                   <h2>{cat.title}</h2>
                 </div>
+
                 <div className="prog-langs">
                   {cat.skills.map((skill) =>
                     skill.iconClass ? (
-                      <i
-                        key={skill.name}
-                        className={skill.iconClass}
-                        title={skill.name}
-                      />
+                      <div key={skill.name} className="skill-item">
+                        <i className={skill.iconClass} title={skill.name} />
+                        <p className="skill-name">{skill.name}</p>
+                      </div>
                     ) : (
                       <span key={skill.name} className="text-skill">
                         {skill.name}
