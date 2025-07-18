@@ -17,15 +17,14 @@ export default function Navbar() {
   useEffect(() => {
     const updateScrollProgress = () => {
       const scrollTop = window.scrollY;
-      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
       const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
       setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', updateScrollProgress);
-
-    // Initial call to set progress on mount
-    updateScrollProgress();
+    updateScrollProgress(); // initial
 
     return () => window.removeEventListener('scroll', updateScrollProgress);
   }, []);
@@ -36,11 +35,13 @@ export default function Navbar() {
   const experienceStyle = pathname === '/experience'  ? { color: 'black' } : undefined;
   const techStyle       = pathname === '/tech_skills' ? { color: 'black' } : undefined;
 
-  // Add responsive class to the CSS module
   const [isResponsive, setIsResponsive] = useState(false);
 
-  // Ensure navbar is closed on every load and on each route change
+  // Reset navbar + scroll to top on every route change
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    setScrollProgress(0);
+
     setIsResponsive(false);
     const line1 = document.querySelector(`.${styles.line1}`) as HTMLElement | null;
     const line2 = document.querySelector(`.${styles.line2}`) as HTMLElement | null;
@@ -57,14 +58,13 @@ export default function Navbar() {
   useEffect(() => {
     const calculatePosition = () => {
       const isMobileView = window.innerWidth <= 780;
-      let position = 92; // Default fallback position
+      let position = 92;
 
       if (isMobileView) {
         if (brandRef.current) {
-          const brandRect = brandRef.current.getBoundingClientRect();
-          position = brandRect.bottom + 10; // +10px margin-bottom
+          position = brandRef.current.getBoundingClientRect().bottom + 10;
         } else {
-          position = 80; // Fallback for mobile
+          position = 80;
         }
       } else if (isResponsive) {
         if (brandRef.current) {
@@ -76,7 +76,7 @@ export default function Navbar() {
         }
       }
 
-      position = Math.max(position, 60); // Minimum 60px
+      position = Math.max(position, 60);
       setLinePosition(position);
     };
 
