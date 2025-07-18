@@ -1,0 +1,56 @@
+/* Layout-related styles moved from globals.css */
+#content-border {
+  text-align: center;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#content-holder {
+  max-width: 810px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.left-cont {
+  flex: 1;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.left-cont p {
+  margin: 0;
+}
+
+.right-cont {
+  width: 580px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 10px;
+  text-indent: 30px;
+}
+
+/* Media query for responsive layout */
+@media screen and (max-width: 780px) {
+  #content-holder {
+    flex-direction: column; /* puts right-cont first, left-cont below */
+  }
+  .left-cont,
+  .right-cont {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    margin-top: -40px;
+  }
+  .left-cont:empty {
+    display: none;
+  }
+  .left-cont {
+    margin-bottom: 52px;
+  }
+}

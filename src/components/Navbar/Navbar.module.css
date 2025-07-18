@@ -1,8 +1,96 @@
-#navbar .silent {
+.icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.4s ease;
+}
+
+.line1 { top: 0; }
+.line2 { top: 13px; transition: transform 0.4s ease, opacity 0.4s ease; }
+.line3 { bottom: 1px; }
+
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: black;
+  transition: color .6s ease;
+}
+
+.navbar a:not(:hover) {
+  transition: color .6s ease;
+}
+
+.navbar .icon { display: none; color: black; }
+
+.navbar .brand {
+  float: none;
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  margin: 0;
+}
+
+.brand { color: black; font-size: 30px; }
+
+.divideTop { margin: 0; padding: 0; border: 1px solid #e5e5e5; }
+
+.navbar .brand:hover { background-color: white; }
+
+.navbar .silent {
   color: #b6b6b6;
 }
 
 /* when NavLink is active we add the “active” class */
-#navbar .silent.active {
+.navbar .silent.active {
   color: black;
+}
+
+/* Responsive class for toggling mobile menu */
+.responsive {
+  /* This class will be applied to the navbar when the mobile menu is open */
+}
+
+/* Media queries for responsive navbar */
+@media screen and (max-width: 780px) {
+  .navbar a:not(:first-child) { display: none; }
+  .navbar .navbarOptions { display: none; }
+  .navbar .brand { text-align: center; margin-bottom: 10px; }
+  .navbar a.icon {
+    float: right;
+    display: block;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 0;
+  }
+  .navbar.responsive .navbarOptions:not(.icon),
+  .navbar.responsive a:not(.icon) {
+    display: block;
+    text-align: center;
+    background: white;
+  }
+  .navbar.responsive .navbarOptions:not(.icon) { width: 100%; }
 }

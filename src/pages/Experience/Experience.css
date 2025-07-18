@@ -7,6 +7,55 @@
     padding-bottom: 5px;
 }
 
+/* Experience styles moved from globals.css */
+.exp-project {
+    text-align: left;
+}
+
+.experience {
+    margin-bottom: 30px;
+}
+
+.exp-listing p {
+    margin: 3px;
+    text-indent: 0;
+    padding-left: 30px;
+}
+
+#exp-label,
+#pub-label {
+    margin-top: 50px;
+}
+
+/* Education styles moved from globals.css */
+.edu-title {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 0;
+    margin-bottom: 5px;
+}
+
+.edu-title h3,
+.edu-title p {
+    margin: 0;
+    padding: 0;
+}
+
+.edu-listing p {
+    margin: 0;
+    padding: 0;
+    text-indent: 10px;
+}
+
+/* Publication styles moved from globals.css */
+.pub-listing {
+    text-indent: -20px;
+    padding-left: 25px;
+}
+
+/* Original Experience.css styles */
 .exp-title {
     display: grid;
     grid-template-columns: auto auto;
@@ -17,6 +66,12 @@
     text-indent: 0;
     margin-bottom: 0;
     margin-left: 10px;
+}
+
+.exp-title h2,
+.exp-title p {
+    margin: 0;
+    padding: 0;
 }
 
 .time-stan {

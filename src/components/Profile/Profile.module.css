@@ -1,0 +1,42 @@
+/* Profile-specific styles moved from globals.css */
+img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+.silent {
+  color: #b6b6b6;
+}
+
+#selfie {
+  width: 300px;
+}
+
+/* Classes for conditional rendering */
+.mobileVisible {
+  display: block;
+}
+
+.desktopHidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 780px) {
+  img {
+    max-width: 70%;
+  }
+  
+  /* Show on mobile for home page */
+  .mobileVisible {
+    display: block;
+  }
+}
